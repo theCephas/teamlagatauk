@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>NGO Site</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.7.0/flowbite.min.css" rel="stylesheet" />
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script>
+                tailwind.config = {
+                        theme: {
+                                fontFamily: {
+                                        'bodyFont': ['Poppins', 'sans-serif']
+                                },
+                                colors: {
+                                        'body': '#f3f3f3',
+                                        'white': '#fff',
+                                        'black': '#000',
+                                        'blue': '#686de0',
+                                        'bluelight': '#cacadb',
+                                        'bluedark': '#575deb',
+                                        'footer': '#363638'
+                                }
+                        }
+                }
+        </script>
+</head>
+
+<body class="font-bodyFont bg-body">
+        <header>
+
+                <nav class="bg-white w-full">
+                        <div
+                                class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl p-4 px-4 md:px-16">
+                                <a href="./index.html" class="flex items-center">
+                                        <img src="./newwhite.webp" class="h-[50px] mr-3" alt="Team Lagata Logo" />
+
+                                </a>
+                                <button data-collapse-toggle="mega-menu-full-cta" type="button"
+                                        class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
+                                        aria-controls="mega-menu-full-cta" aria-expanded="false">
+                                        <span class="sr-only">Open main menu</span>
+                                        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                                fill="none" viewBox="0 0 17 14">
+                                                <path stroke="currentColor" stroke-linecap="round"
+                                                        stroke-linejoin="round" stroke-width="2"
+                                                        d="M1 1h15M1 7h15M1 13h15" />
+                                        </svg>
+                                </button>
+
+                                <div id="mega-menu-full-cta"
+                                        class="text-[0.8rem] md:text-[.95rem] items-center justify-between hidden w-full md:flex md:w-auto md:order-1">
+
+                                        <ul class="flex flex-col mt-6 font-medium md:flex-row md:space-x-8 md:mt-0">
+                                                <li>
+                                                        <a href="./index.html"
+                                                                class="block py-2 pl-3 pr-4 pb-4 pt-3 text-black border-b border-gray-300 hover:bg-gray-100 md:border-0 md:hover:bg-white transition duration-500 md:hover:border-b md:hover:border-[#dc2626] md:hover:scale-110 md:p-0"
+                                                                aria-current="page">Home</a>
+                                                </li>
+                                                <li>
+
+                                                        <button id="dropdownDelayButton"
+                                                                data-dropdown-toggle="dropdownDelay"
+                                                                data-dropdown-delay="500" data-dropdown-trigger="hover"
+                                                                class="block py-2 pl-3 pr-4 pb-4 pt-3 text-black border-b w-full border-gray-300 hover:bg-gray-100 md:border-0 md:hover:bg-white transition duration-500 md:hover:border-b md:hover:border-[#dc2626] md:hover:scale-110 md:p-0 flex justify-between md:block"
+                                                                type="button">About Us<svg
+                                                                        class="w-2.5 h-2.5 ml-2.5 inline mt-2 md:mt-0"
+                                                                        aria-hidden="true"
+                                                                        xmlns="http://www.w3.org/2000/svg" fill="none"
+                                                                        viewBox="0 0 10 6">
+                                                                        <path stroke="#dc2626"
+                                                                                stroke-linecap="round"
+                                                                                stroke-linejoin="round" stroke-width="2"
+                                                                                d="m1 1 4 4 4-4" />
+                                                                </svg></button>
+                                                        <!-- Dropdown menu -->
+                                                        <div id="dropdownDelay"
+                                                                class="z-10 hidden bg-white divide-y divide-gray-100 w-[200px] text-center m-auto rounded-lg shadow w-44">
+                                                                <ul class="py-2 text-sm md:text-[13px] text-gray-700"
+                                                                        aria-labelledby="dropdownDelayButton">
+                                                                        <li>
+                                                                                <a href="./vision.html"
+                                                                                        class="block px-4 py-2 hover:bg-gray-100 hover:text-black">Our
+                                                                                        Vision</a>
+                                                                        </li>
+                                                                        <li>
+                                                                                <a href="./vision.html"
+                                                                                        class="block px-4 py-2 my-4 hover:bg-gray-100 hover:text-black">Our
+                                                                                        Mission</a>
+                                                                        </li>
+                                                                        <li>
+                                                                                <a href="#"
+                                                                                        class="block px-4 py-2 hover:bg-gray-100 hover:text-black">Meet
+                                                                                        the Team</a>
+                                                                        </li>
+
+                                                                </ul>
+                                                        </div>
+
+                                                </li>
+                                                <li>
+                                                        <a href="./event.html"
+                                                                class="block py-2 pl-3 pr-4 pb-4 pt-3 text-black border-b border-gray-300 hover:bg-gray-100 md:border-0 md:hover:bg-white transition duration-500 md:hover:border-b md:hover:border-[#dc2626] md:hover:scale-110 md:p-0">Events</a>
+                                                </li>
+                                                <li>
+                                                        <a href="#"
+                                                                class="block py-2 pl-3 pr-4 pb-4 pt-3 text-black border-b border-gray-300 hover:bg-gray-100 md:border-0 md:hover:bg-white transition duration-500 md:hover:border-b md:hover:border-[#dc2626] md:hover:scale-110 md:p-0">Meet
+                                                                the CEO</a>
+                                                </li>
+
+
+                                        </ul>
+                                        <button
+                                                class="bg-blue hover:bg-[#dc2626] hover:duration-600 rounded p-2 px-6  mt-4 md:mt-0 md:ml-6 hover:duration-600">
+                                                <a href="./contact.html" class="">Contact US</a>
+                                        </button>
+                                </div>
+                        </div>
+                        </div>
+                </nav>
+
+        </header>
+
+
+        <main class="pt-[60px]">
+                <section class="tracking-wide  px-4 md:px-12">
+                        <div class="flex flex-col md:flex md:flex-row ">
+                                <div>
+                                        <img src="./founderpic.webp" alt="CEO"
+                                                class="rounded-3xl shadow shadow-lg w-[50rem] m-auto md:m-0">
+                                        <div class="flex flex-col items-center text-center pt-10">
+                                                <p class="text-[18px]">Mr. Idowu Adebanwo</p>
+                                                <p class="text-gray-400 pb-8">Founder of Team Lagata UK Foundation</p>
+                                        </div>
+                                </div>
+                                <div class="md:ml-[70px]">
+                                        <h1 class="text-2xl md:text-4xl pb-4 pt-8 md:pt-4 text-center md:text-left">About the Founder
+                                        </h1>
+                                        
+                                        <p class="md:w-[37.5rem] leading-8 text-[12px]">
+                                                <span class="text-blue-500">Mr. Idowu Adebanwo</span> is an exceptional
+                                                and inspiring leader who has left an indelible mark on both the
+                                                organization and the communities he serves. With a fervent commitment to
+                                                social change and a profound sense of empathy, he has guided the
+                                                foundation towards becoming a beacon of hope for those in need. Having
+                                                originated from a modest background, <span class="text-blue-500">Mr.
+                                                        Idowu Adebanwo</span> gained firsthand insights into the
+                                                challenges faced by underserved communities.
+                                        </p>
+                                        <p class="md:w-[37.5rem] leading-8 text-[12px] py-4">
+                                                These early experiences ignited his determination to create a positive
+                                                impact on society. He channeled his efforts towards uplifting others,
+                                                and this became the driving force behind his journey in the field of
+                                                social work and community development. <span
+                                                        class="text-blue-500">Educational and Professional
+                                                        Journey:</span> <span class="text-blue-500">Mr.
+                                                        Adebanwo's</span> academic pursuits established a robust
+                                                foundation for his leadership role. He commenced his academic journey in
+                                                Lagos, Nigeria, and further advanced to the United Kingdom, where he
+                                                achieved a Bachelor's degree in Sociology and an MSc. in Criminology.
+                                        </p>
+                                </div>
+                        </div>
+                        <div>
+                                <p class="leading-8 text-[12px]">
+                                        Equipped with a degree in social work and a wealth of knowledge in
+                                        community development, <span class="text-blue-500">Mr. Idowu
+                                                Adebanwo</span> acquired the skills needed to address intricate
+                                        social issues through strategic and sustainable solutions. Upon entering
+                                        the realm of social work, he collaborated with diverse NGOs and
+                                        charitable organizations in the United Kingdom, including the <span
+                                                class="text-blue-500">LIFELINE Charitable organisation</span>,
+                                        where he contributed to feeding, supporting, and providing homes for the
+                                        homeless. These experiences honed his abilities in program
+                                        implementation, community engagement, and resource management.
+                                </p>
+                                <p class="leading-8 text-[12px] py-4">
+                                        These experiences deepened his understanding of the challenges
+                                        encountered by marginalized populations and fueled his resolve to effect
+                                        lasting change. <span class="text-blue-500">Founding of Team Lagata UK
+                                                Foundation:</span> Driven by a clear vision and a fervor for
+                                        creating meaningful change, <span class="text-blue-500">Mr. Idowu
+                                                Adebanwo</span> co-founded the <span class="text-blue-500">Team
+                                                Lagata UK Foundation</span>. The foundation's name, "Lagata,"
+                                        symbolizes unity and togetherness, reflecting the CEO's belief in the
+                                        potency of collective action. Alongside his co-founders, he envisioned
+                                        an organization that would bring hope, opportunity, and empowerment to
+                                        underserved communities.
+                                </p>
+                        </div>
+                        <p class="leading-8 text-[12px]">
+                                As the CEO, <span class="text-blue-500">Mr. Idowu Adebanwo</span> leads by example,
+                                embodying a transformational leadership style that inspires the entire team. He fosters
+                                open communication, nurtures a culture of collaboration, and empowers team members to
+                                take ownership of their roles. His compassionate and accessible demeanor fosters trust
+                                and camaraderie within the organization. Under his guidance, the <span
+                                        class="text-blue-500">Team Lagata UK Foundation</span> has undertaken numerous
+                                impactful initiatives that have touched the lives of many. The foundation's education
+                                programs grant access to quality learning materials, while its healthcare initiatives
+                                deliver essential medical aid to remote and vulnerable regions.
+                        </p>
+                        <p class="leading-8 text-[12px] py-4">
+                                Beyond these endeavors, <span class="text-blue-500">Mr. Adebanwo's</span> dedication to
+                                environmental sustainability has led to successful campaigns promoting eco-friendly
+                                practices and environmental conservation. Through tree-planting drives, waste management
+                                programs, and community awareness sessions, he has cultivated a sense of responsibility
+                                toward the planet among beneficiaries and team members alike.
+                        </p>
+                        <p class="leading-8 text-[12px] py-4">
+                                <span class="text-blue-500">Mr. Idowu Adebanwo</span> recognizes the significance of
+                                collaboration in driving sustainable change. He played a pivotal role in establishing
+                                strategic partnerships with local organizations, government agencies, and other NGOs.
+                                These collaborations have magnified the foundation's impact and nurtured a holistic
+                                approach to addressing social challenges.
+                        </p>
+                        <p class="leading-8 text-[12px]">
+                                His tireless efforts and dedication have earned him recognition and accolades within the
+                                realm of social work and beyond. Nevertheless, his true measure of success lies in the
+                                tangible improvements made in the lives of beneficiaries. The positive transformations
+                                brought about by the initiatives of the <span class="text-blue-500">Team Lagata UK
+                                        Foundation</span> stand as a testament to <span class="text-blue-500">Mr.
+                                        Adebanwo's</span> transformative leadership.
+                        </p>
+                        <p class="leading-8 text-[12px] py-4">
+                                <span class="text-blue-500">Mr. Idowu Adebanwo</span> recognizes the significance of
+                                collaboration in driving sustainable change. He played a pivotal role in establishing
+                                strategic partnerships with local organizations, government agencies, and other NGOs.
+                                These collaborations have magnified the foundation's impact and nurtured a holistic
+                                approach to addressing social challenges.
+                        </p>
+                        <p class="leading-8 text-[12px]">
+                                His tireless efforts and dedication have earned him recognition and accolades within the
+                                realm of social work and beyond. Nevertheless, his true measure of success lies in the
+                                tangible improvements made in the lives of beneficiaries. The positive transformations
+                                brought about by the initiatives of the <span class="text-blue-500">Team Lagata UK
+                                        Foundation</span> stand as a testament to <span class="text-blue-500">Mr.
+                                        Adebanwo's</span> transformative leadership.
+                        </p>
+                </section>
+
+                <section class="mt-[70px] mb-[0px]">
+                        <p
+                                class="pb-[20px] text-[1rem] px-4 md:px-12 md:text-[1.5rem] font-semibold cursor-pointer hover:underline">
+                                Mr Idowu, Partners, and Events >>>
+                        </p>
+                        <div id="indicators-carousel" class="w-full relative m-auto" data-carousel="">
+
+                                <div
+                                        class="relative h-[300px] md:h-[600px] overflow-hidden rounded-lg m-auto">
+
+                                        <div class="hidden ease-in-out" data-carousel-item="active">
+                                                <img src="./images/morefounderpic1.webp"
+                                                        class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                                                        alt="...">
+                                        </div>
+                                        <div class="hidden ease-in-out" data-carousel-item>
+                                                <img src="./images/morefounderpic2.webp"
+                                                        class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                                                        alt="...">
+                                        </div>
+                                        <div class="hidden ease-in-out" data-carousel-item>
+                                                <img src="./images/images0161.webp"
+                                                        class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                                                        alt="...">
+                                        </div>
+
+                                        <div class="hidden ease-in-out" data-carousel-item>
+                                                <img src="./images/images0163.webp"
+                                                        class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                                                        alt="...">
+                                        </div>
+
+                                        <div class="hidden ease-in-out" data-carousel-item>
+                                                <img src="./images/images0673.webp"
+                                                        class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                                                        alt="...">
+                                        </div>
+
+                                        <div class="hidden ease-in-out" data-carousel-item>
+                                                <img src="./images/images0675.webp"
+                                                        class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                                                        alt="...">
+                                        </div>
+                                </div>
+
+                                <button type="button"
+                                        class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                                        data-carousel-prev>
+                                        <span
+                                                class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                                                <svg class="w-4 h-4 text-white dark:text-gray-800" aria-hidden="true"
+                                                        xmlns="http://www.w3.org/2000/svg" fill="none"
+                                                        viewBox="0 0 6 10">
+                                                        <path stroke="currentColor" stroke-linecap="round"
+                                                                stroke-linejoin="round" stroke-width="2"
+                                                                d="M5 1 1 5l4 4" />
+                                                </svg>
+                                                <span class="sr-only">Previous</span>
+                                        </span>
+                                </button>
+                                <button type="button"
+                                        class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                                        data-carousel-next>
+                                        <span
+                                                class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                                                <svg class="w-4 h-4 text-white dark:text-gray-800" aria-hidden="true"
+                                                        xmlns="http://www.w3.org/2000/svg" fill="none"
+                                                        viewBox="0 0 6 10">
+                                                        <path stroke="currentColor" stroke-linecap="round"
+                                                                stroke-linejoin="round" stroke-width="2"
+                                                                d="m1 9 4-4-4-4" />
+                                                </svg>
+                                                <span class="sr-only">Next</span>
+                                        </span>
+                                </button>
+                        </div>
+                </section>
+
+        </main>
+
+
+
+
+        <footer class="bg-black p-4 py-20 px-4 md:px-16">
+                <div>
+                        <a href="#" class="flex items-center">
+                                <img src="./teamblack.webp" class="h-[50px] mr-3"
+                                        alt="Team Lagata Logo" />
+
+                        </a>
+                </div>
+
+                <div class="flex flex-col md:flex-row md:justify-between text-bluelight mt-[50px]">
+                        <div>
+                                <p class="text-xl text-white font-semibold mb-6">
+                                        About Us
+                                </p>
+                                <p class="my-4 text-[10px] md:text-[12px] hover:underline  hover:text-white">
+                                        <a href="./vision.html">Our Vision & Values</a>
+                                </p>
+                                <p class="my-4 text-[10px] md:text-[12px] hover:underline  hover:text-white">
+                                        <a href="./vision.html">Our Mission</a>
+                                </p>
+                                <p class="text-[10px] md:text-[12px] hover:underline  hover:text-white">
+                                        <a href="team.html">Our Structure</a>
+                                </p>
+                        </div>
+
+                        <div class="mt-12 md:mt-0">
+                                <p>
+                                        <a href="./contact.html" class="text-xl text-white font-semibold mb-6">Get In Touch</a>
+                                </p>
+                                <p class="flex my-4 text-[10px] md:text-[12px] hover:underline  hover:text-white">
+                                        <img src="./images/phone-svgrepo-com.svg" alt="Phone logo" class=" rounded p-1">
+                                        <a href="tel:+2348038088632" class="pt-4 pl-2">+234-803-808-8632</a>
+                                </p>
+                                <p class="flex my-4 text-[10px] md:text-[12px] hover:underline hover:text-white">
+                                        <img src="./images/email-1-svgrepo-com.svg" alt="Email logo"
+                                                class=" rounded p-1"> <a href="mailto:teamlagatauk@gmail.com"
+                                                class="pt-4 pl-2">
+                                                teamlagatauk@gmail.com</a>
+                                </p>
+                                <p class="flex my-4 text-[10px] md:text-[12px] hover:underline hover:text-white">
+                                        <img src="./images/instagram-svgrepo-com.svg" alt="Instagram logo" class="p-1">
+                                        <a href="https://instagram.com/teamlagataukfoundation?igshid=NTc4MTIwNjQ2YQ=="
+                                                class="pt-4 pl-2">teamlagataukfoundation</a>
+                                </p>
+                                <p class="flex my-4 text-[10px] md:text-[12px] hover:text-white">
+                                        <img src="./images/gps-svgrepo-com.svg" alt="GPS logo" class="  rounded p-1">
+                                        <span class="pt-4 pl-2">Block 303 flat 1 low cost housing estate, Oke Afa Isolo,
+                                                Lagos Nigeria.</span>
+                                </p>
+                        </div>
+                </div>
+
+                <div class="mt-16 md:mt-16 text-center">
+                        <p class="text-[10px] text-gray-200">&copy; 2023 Team Lagata UK Foundation</p>
+                        <p class="text-[8px] text-gray-400">Privacy Policy | Terms of use</p>
+                </div>
+        </footer>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.7.0/flowbite.min.js"></script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+                AOS.init();
+        </script>
+        <script src="script.js"></script>
+</body>
+
+</html>

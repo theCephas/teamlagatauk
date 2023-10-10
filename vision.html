@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>NGO Site</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.7.0/flowbite.min.css" rel="stylesheet" />
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script>
+                tailwind.config = {
+                        theme: {
+                                extend: {
+                                        backgroundImage: {
+                                                'cutekids': "url('/images/cutekids.jpg')"
+                                        }
+                                },
+                                fontFamily: {
+                                        'bodyFont': ['Poppins', 'sans-serif']
+                                },
+                                colors: {
+                                        'body': '#f3f3f3',
+                                        'white': '#fff',
+                                        'black': '#000',
+                                        'blue': '#686de0',
+                                        'bluelight': '#cacadb',
+                                        'bluedark': '#575deb',
+                                        'footer': '#363638'
+                                }
+                        }
+                }
+        </script>
+</head>
+
+<body class="font-bodyFont bg-body">
+        <header>
+
+                <nav class="bg-white w-full">
+                        <div
+                                class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl p-4 px-4 md:px-16">
+                                <a href="./index.html" class="flex items-center">
+                                        <img src="./newwhite.webp" class="h-[50px] mr-3" alt="Team Lagata Logo" />
+
+                                </a>
+                                <button data-collapse-toggle="mega-menu-full-cta" type="button"
+                                        class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
+                                        aria-controls="mega-menu-full-cta" aria-expanded="false">
+                                        <span class="sr-only">Open main menu</span>
+                                        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                                fill="none" viewBox="0 0 17 14">
+                                                <path stroke="currentColor" stroke-linecap="round"
+                                                        stroke-linejoin="round" stroke-width="2"
+                                                        d="M1 1h15M1 7h15M1 13h15" />
+                                        </svg>
+                                </button>
+
+                                <div id="mega-menu-full-cta"
+                                        class="text-[0.8rem] md:text-[.95rem] items-center justify-between hidden w-full md:flex md:w-auto md:order-1">
+
+                                        <ul class="flex flex-col mt-6 font-medium md:flex-row md:space-x-8 md:mt-0">
+                                                <li>
+                                                        <a href="./index.html"
+                                                                class="block py-2 pl-3 pr-4 pb-4 pt-3 text-black border-b border-gray-300 hover:bg-gray-100 md:border-0 md:hover:bg-white transition duration-500 md:hover:border-b md:hover:border-[#dc2626] md:hover:scale-110 md:p-0"
+                                                                aria-current="page">Home</a>
+                                                </li>
+                                                <li>
+
+                                                        <button id="dropdownDelayButton"
+                                                                data-dropdown-toggle="dropdownDelay"
+                                                                data-dropdown-delay="500" data-dropdown-trigger="hover"
+                                                                class="block py-2 pl-3 pr-4 pb-4 pt-3 text-black border-b w-full border-gray-300 hover:bg-gray-100 md:border-0 md:hover:bg-white transition duration-500 md:hover:border-b md:hover:border-[#dc2626] md:hover:scale-110 md:p-0 flex justify-between md:block"
+                                                                type="button">About Us<svg
+                                                                        class="w-2.5 h-2.5 ml-2.5 inline mt-2 md:mt-0"
+                                                                        aria-hidden="true"
+                                                                        xmlns="http://www.w3.org/2000/svg" fill="none"
+                                                                        viewBox="0 0 10 6">
+                                                                        <path stroke="#dc2626" stroke-linecap="round"
+                                                                                stroke-linejoin="round" stroke-width="2"
+                                                                                d="m1 1 4 4 4-4" />
+                                                                </svg></button>
+                                                        <!-- Dropdown menu -->
+                                                        <div id="dropdownDelay"
+                                                                class="z-10 hidden bg-white divide-y divide-gray-100 w-[200px] text-center m-auto rounded-lg shadow w-44">
+                                                                <ul class="py-2 text-sm md:text-[13px] text-gray-700"
+                                                                        aria-labelledby="dropdownDelayButton">
+                                                                        <li>
+                                                                                <a href="./vision.html"
+                                                                                        class="block px-4 py-2 hover:bg-gray-100 hover:text-black">Our
+                                                                                        Vision</a>
+                                                                        </li>
+                                                                        <li>
+                                                                                <a href="./vision.html"
+                                                                                        class="block px-4 py-2 my-4 hover:bg-gray-100 hover:text-black">Our
+                                                                                        Mission</a>
+                                                                        </li>
+                                                                        <li>
+                                                                                <a href="#"
+                                                                                        class="block px-4 py-2 hover:bg-gray-100 hover:text-black">Meet
+                                                                                        the Team</a>
+                                                                        </li>
+
+                                                                </ul>
+                                                        </div>
+
+                                                </li>
+                                                <li>
+                                                        <a href="./event.html"
+                                                                class="block py-2 pl-3 pr-4 pb-4 pt-3 text-black border-b border-gray-300 hover:bg-gray-100 md:border-0 md:hover:bg-white transition duration-500 md:hover:border-b md:hover:border-[#dc2626] md:hover:scale-110 md:p-0">Events</a>
+                                                </li>
+                                                <li>
+                                                        <a href="./founder.html"
+                                                                class="block py-2 pl-3 pr-4 pb-4 pt-3 text-black border-b border-gray-300 hover:bg-gray-100 md:border-0 md:hover:bg-white transition duration-500 md:hover:border-b md:hover:border-[#dc2626] md:hover:scale-110 md:p-0">Meet
+                                                                the CEO</a>
+                                                </li>
+
+
+                                        </ul>
+                                        <button
+                                                class="bg-blue hover:bg-[#dc2626] hover:duration-600 rounded p-2 px-6  mt-4 md:mt-0 md:ml-6 hover:duration-600">
+                                                <a href="#" class="">Contact US</a>
+                                        </button>
+                                </div>
+                        </div>
+                        </div>
+                </nav>
+
+        </header>
+
+        <main class="">
+                <section class="bg-[url('./healthcare/hth0458.webp')]  py-10 px-4 md:px-12  bg-cover bg-no-repeat bg-center">
+                        <div data-aos="fade-in" data-aos-duration="1000" class="pt-[120px] text-black">
+                                <h1
+                                        class="text-[1rem] md:text-[2.3rem] pb-0 font-bold after:block after:w-[5rem] after:h-[5px] after:mt-[0.75rem] after:bg-[#dc2626] content-none">
+                                        Our Vision</h1>
+
+                                <p
+                                        class="pt-10 pb-[100px] font-bold md:w-[400px] leading-8 md:leading-9 text-[1rem] md:text-[1.3rem]">
+                                        Our focus is building a strong and vibrant community as a collective endeavor
+                                        that thrives on the power of compassion, empathy, and selflessness.
+                                        Giving our time and skills to serve others without expecting anything in return,
+                                        we sow the seeds of unity and solidarity, creating a tapestry of interconnected
+                                        lives woven with kindness and love.
+                                </p>
+                        </div>
+                </section>
+
+                <section class="text-center text-black pt-20 px-10">
+                        <h2 data-aos="fade-up" data-aos-duration="700" class="text-[2rem] font-bold pb-6">Our Vision
+                                Statement</h2>
+                        <img data-aos="fade-up" data-aos-duration="700" src="./images/rectangle.jpg" alt=""
+                                class="m-auto">
+                        <div>
+                                <p data-aos="fade-up" data-aos-duration="700" class="text-[16px] md:text-xl py-6">Our
+                                        <b>vision</b> for every community,
+                                        productiveness in every individual.
+                                </p>
+                                <p data-aos="fade-up" data-aos-duration="700" class="text-[16px] md:text-xl pb-10">Our
+                                        <b>enthusiasm</b> for every soul, the zeal
+                                        to make it so.
+                                </p>
+                                <p data-aos="fade-up" data-aos-duration="700"
+                                        class="w-auto md:w-[600px] m-auto pb-8 text-[12px] leading-7">Volunteering
+                                        empowers
+                                        us to forge deep connections with fellow community members, transcending age,
+                                        race, and social status, as we all become bound by the common thread of shared
+                                        purpose.</p>
+                                <p data-aos="fade-up" data-aos-duration="700"
+                                        class="w-auto md:w-[600px] m-auto pb-6 text-[12px] leading-7">We strive to leand
+                                        a
+                                        helping hand, witness the transformative power of collective action in turning
+                                        adversity into opportunity, despair into hope, and isolation into a highly-knit
+                                        fabric of belonging.</p>
+                        </div>
+                </section>
+
+                <section class="bg-[url('./donation/don5.webp')] mt-20  py-10 px-4 md:px-12  bg-cover bg-no-repeat bg-center">
+                        <div data-aos="fade-in" data-aos-duration="1000" class="pt-[120px] text-white font-bold">
+                                <h1
+                                        class="text-[2rem] md:text-[2.3rem] pb-0 font-bold after:block after:w-[5rem] after:h-[5px] after:mt-[0.75rem] after:bg-[#dc2626] content-none">
+                                        Our Mission</h1>
+
+                                <p
+                                        class="pt-16 pb-[100px] font-bold md:w-[400px] leading-8 md:leading-9 text-[1rem] md:text-[1.3rem]">
+                                        Empower individuals to leverage their expertise and time for cultivating
+                                        resilient and engaged communities.
+                                        Thereby, fostering a culture of contribution, where every act of giving enhances
+                                        the tapestry of community fabric.
+                                        Our purpose-driven foundation is resolutely committed to enabling individuals to
+                                        channel their skills and time into becoming
+                                        catalysts of change.
+                                </p>
+                        </div>
+                </section>
+
+                <section class="text-center text-black pt-20 px-10">
+                        <h3 data-aos="fade-up" data-aos-duration="700" data-aos="fade-up" data-aos-duration="600"
+                                class="text-[2rem] font-bold pb-6">Our Mission Statement</h3>
+                        <img data-aos="fade-up" data-aos-duration="700" src="./images/rectangle.jpg" alt=""
+                                class="m-auto">
+                        <div>
+                                <p data-aos="fade-up" data-aos-duration="700"
+                                        class="text-[10px] w-auto leading-7 md:w-[600px] m-auto pt-6 pb-12 text-black/80">
+                                        <span class="text-blue-600 font-bold">Team
+                                                Lagata UK Foundation</span> is a
+                                        unique community driven group whose mission is to show their firm belief that
+                                        every individual possesses unique skills and gifts that, when harnessed
+                                        collectively, have the power to weave a tapestry of a stronger, more cohesive
+                                        community.
+                                </p>
+                                <p data-aos="fade-up" data-aos-duration="700"
+                                        class="w-auto md:w-[600px] m-auto pb-10 text-[12px] leading-7">Envision a world
+                                        where
+                                        everyone feels a deep sense of purpose and belonging, where individuals are not
+                                        merely <span class="text-blue-600 font-bold italic">passive spectators</span>
+                                        but active participants in shaping the duture they
+                                        desire.</p>
+                                <p data-aos="fade-up" data-aos-duration="700"
+                                        class="w-auto md:w-[600px] m-auto pb-8 text-[12px] leading-7">Enable people to
+                                        offer
+                                        their skills and time to <span class="text-blue-600 font-bold italic">build
+                                                stronger</span> and more active community.</p>
+
+                        </div>
+                </section>
+
+                <section class="text-black pt-20 px-10">
+                        <h4 data-aos="fade-up" data-aos-duration="700" class="text-center text-[2rem] font-bold pb-6">
+                                Our Values</h4>
+                        <img data-aos="fade-up" data-aos-duration="700" src="./images/rectangle.jpg" alt=""
+                                class="m-auto">
+
+
+                        <section
+                                class="flex flex-col justify-center items-center sm:flex sm:flex-row sm:justify-around sm:items-center">
+                                <ol data-aos="fade-in" data-aos-duration="1000" class=" border-l border-black mt-20">
+                                        <div>
+                                                <li class="my-12 ml-4">
+                                                        <div
+                                                                class="ml-[-17px] mb-[-15px] w-3 h-3 bg-black rounded-full mt-1.5 -left-1.5 border border-white ">
+                                                        </div>
+
+                                                        <h5 class="text-lg font-semibold text-black">
+                                                                EXCELLENCE & CREATIVITY</h5>
+                                                        <p
+                                                                class="mt-8 mb-4 w-[200px] text-base font-normal text-black/70">
+                                                                We drive for excellence in all that we do, recognizing
+                                                                each person's contribution.</p>
+                                                </li>
+                                                <li class="mb-10 ml-4">
+                                                        <div
+                                                                class="ml-[-17px] mb-[-15px] w-3 h-3 bg-black rounded-full mt-1.5 -left-1.5 border border-white ">
+                                                        </div>
+                                                        <h5 class="text-lg font-semibold text-black">
+                                                                TEAMWORK</h5>
+                                                        <p
+                                                                class="mt-8 mb-4 text-base w-[200px] font-normal text-black/70">
+                                                                We value working with others, building and maintaining
+                                                                effective partnerships.
+                                                        </p>
+                                                </li>
+                                        </div>
+                                </ol>
+
+                                <ol data-aos="fade-in" data-aos-duration="1000" class="border-l border-black mt-20">
+                                        <div>
+                                                <li class="ml-4 my-12">
+                                                        <div
+                                                                class="ml-[-17px] mb-[-15px] w-3 h-3 bg-black rounded-full mt-1.5 -left-1.5 border border-white ">
+                                                        </div>
+
+                                                        <h5 class="mt-5 text-lg font-semibold text-black">
+                                                                RESPECT & INCLUSION</h5>
+                                                        <p
+                                                                class="mt-8 mb-4 text-base w-[200px] font-normal text-black/70">
+                                                                We celebrate diversity & promote inclusion to build a
+                                                                culture densed on due regard for others
+                                                        </p>
+                                                </li>
+                                        </div>
+                                        <div>
+                                                <li class="ml-4">
+                                                        <div
+                                                                class="ml-[-17px] mb-[-15px]  w-3 h-3 bg-black rounded-full mt-1.5 -left-1.5 border border-white ">
+                                                        </div>
+
+                                                        <h5 class="text-lg font-semibold text-black">
+                                                                BENEFICIARY & SAFEGUARDING</h5>
+                                                        <p
+                                                                class="mt-8 mb-4 text-base w-[200px] font-normal text-black/70">
+                                                                We focus on the achievement of positive outcome for
+                                                                everyone involved in volunteering and apply recognized
+                                                                safeguarding pronciples to our work.
+                                                        </p>
+                                                </li>
+                                        </div>
+                                </ol>
+
+                        </section>
+
+                </section>
+        </main>
+
+        <footer class="mt-[100px] bg-black p-4 py-20 px-12 md:px-16">
+                <div>
+                        <a href="#" class="flex items-center">
+                                <img src="./teamblack.webp" class="h-[50px] mr-3"
+                                        alt="Team Lagata Logo" />
+
+                        </a>
+                </div>
+
+                <div class="flex flex-col md:flex-row md:justify-between text-bluelight mt-[50px]">
+                        <div>
+                                <p class="text-xl text-white font-semibold mb-6">
+                                        About Us
+                                </p>
+                                <p class="my-4 text-[10px] md:text-[12px] hover:underline  hover:text-white">
+                                        <a href="./vision.html">Our Vision & Values</a>
+                                </p>
+                                <p class="my-4 text-[10px] md:text-[12px] hover:underline  hover:text-white">
+                                        <a href="./vision.html">Our Mission</a>
+                                </p>
+                                <p class="text-[10px] md:text-[12px] hover:underline  hover:text-white">
+                                        <a href="team.html">Our Structure</a>
+                                </p>
+                        </div>
+
+                        <div class="mt-12 md:mt-0">
+                                <p>
+                                        <a href="./contact.html" class="text-xl text-white font-semibold mb-6">Get In Touch</a>
+                                </p>
+                                <p class="flex my-4 text-[10px] md:text-[12px] hover:underline  hover:text-white">
+                                        <img src="./images/phone-svgrepo-com.svg" alt="Phone logo" class=" rounded p-1">
+                                        <a href="tel:+2348038088632" class="pt-4 pl-2">+234-803-808-8632</a>
+                                </p>
+                                <p class="flex my-4 text-[10px] md:text-[12px] hover:underline hover:text-white">
+                                        <img src="./images/email-1-svgrepo-com.svg" alt="Email logo"
+                                                class=" rounded p-1"> <a href="mailto:teamlagatauk@gmail.com"
+                                                class="pt-4 pl-2">
+                                                teamlagatauk@gmail.com</a>
+                                </p>
+                                <p class="flex my-4 text-[10px] md:text-[12px] hover:underline hover:text-white">
+                                        <img src="./images/instagram-svgrepo-com.svg" alt="Instagram logo" class="p-1">
+                                        <a href="https://instagram.com/teamlagataukfoundation?igshid=NTc4MTIwNjQ2YQ=="
+                                                class="pt-4 pl-2">teamlagataukfoundation</a>
+                                </p>
+                                <p class="flex my-4 text-[10px] md:text-[12px] hover:text-white">
+                                        <img src="./images/gps-svgrepo-com.svg" alt="GPS logo" class="  rounded p-1">
+                                        <span class="pt-4 pl-2">Block 303 flat 1 low cost housing estate, Oke Afa Isolo,
+                                                Lagos Nigeria.</span>
+                                </p>
+                        </div>
+                </div>
+
+                <div class="mt-16 md:mt-16 text-center">
+                        <p class="text-[10px] text-gray-200">&copy; 2023 Team Lagata UK Foundation</p>
+                        <p class="text-[8px] text-gray-400">Privacy Policy | Terms of use</p>
+                </div>
+        </footer>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.7.0/flowbite.min.js"></script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+                AOS.init();
+        </script>
+        <script src="script.js"></script>
+</body>
+
+</html>
+

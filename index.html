@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>NGO Site</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.7.0/flowbite.min.css" rel="stylesheet" />
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script>
+                tailwind.config = {
+                        theme: {
+                                fontFamily: {
+                                        'bodyFont': ['Poppins', 'sans-serif']
+                                },
+                                colors: {
+                                        'body': '#f3f3f3',
+                                        'white': '#fff',
+                                        'black': '#000',
+                                        'blue': '#686de0',
+                                        'bluelight': '#cacadb',
+                                        'bluedark': '#575deb',
+                                        'footer': '#363638'
+                                }
+                        }
+                }
+        </script>
+</head>
+
+<body class="font-bodyFont bg-body">
+        <header>
+
+                <nav class="bg-white w-full">
+                        <div
+                                class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl p-4 px-4 md:px-16">
+                                <a href="./index.html" class="flex items-center">
+                                        <img src="./newwhite.webp" class="h-[50px] mr-3" alt="Team Lagata Logo" />
+
+                                </a>
+                                <button data-collapse-toggle="mega-menu-full-cta" type="button"
+                                        class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
+                                        aria-controls="mega-menu-full-cta" aria-expanded="false">
+                                        <span class="sr-only">Open main menu</span>
+                                        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                                fill="none" viewBox="0 0 17 14">
+                                                <path stroke="currentColor" stroke-linecap="round"
+                                                        stroke-linejoin="round" stroke-width="2"
+                                                        d="M1 1h15M1 7h15M1 13h15" />
+                                        </svg>
+                                </button>
+
+                                <div id="mega-menu-full-cta"
+                                        class="text-[0.8rem] md:text-[.95rem] items-center justify-between hidden w-full md:flex md:w-auto md:order-1">
+
+                                        <ul class="flex flex-col mt-6 font-medium md:flex-row md:space-x-8 md:mt-0">
+                                                <li>
+                                                        <a href="#"
+                                                                class="block py-2 pl-3 pr-4 pb-4 pt-3 text-black border-b border-gray-300 hover:bg-gray-100 md:border-0 md:hover:bg-white transition duration-500 md:hover:border-b md:hover:border-[#dc2626] md:hover:scale-110 md:p-0"
+                                                                aria-current="page">Home</a>
+                                                </li>
+                                                <li>
+
+                                                        <button id="dropdownDelayButton"
+                                                                data-dropdown-toggle="dropdownDelay"
+                                                                data-dropdown-delay="500" data-dropdown-trigger="hover"
+                                                                class="block py-2 pl-3 pr-4 pb-4 pt-3 text-black border-b w-full border-gray-300 hover:bg-gray-100 md:border-0 md:hover:bg-white transition duration-500 md:hover:border-b md:hover:border-[#dc2626] md:hover:scale-110 md:p-0 flex justify-between md:block"
+                                                                type="button">About Us<svg
+                                                                        class="w-2.5 h-2.5 ml-2.5 inline mt-2 md:mt-0"
+                                                                        aria-hidden="true"
+                                                                        xmlns="http://www.w3.org/2000/svg" fill="none"
+                                                                        viewBox="0 0 10 6">
+                                                                        <path stroke="#dc2626"
+                                                                                stroke-linecap="round"
+                                                                                stroke-linejoin="round" stroke-width="2"
+                                                                                d="m1 1 4 4 4-4" />
+                                                                </svg></button>
+                                                        <!-- Dropdown menu -->
+                                                        <div id="dropdownDelay"
+                                                                class="z-10 hidden bg-white divide-y divide-gray-100 w-[200px] text-center m-auto rounded-lg shadow w-44">
+                                                                <ul class="py-2 text-sm md:text-[13px] text-gray-700"
+                                                                        aria-labelledby="dropdownDelayButton">
+                                                                        <li>
+                                                                                <a href="./vision.html"
+                                                                                        class="block px-4 py-2 hover:bg-gray-100 hover:text-black">Our
+                                                                                        Vision</a>
+                                                                        </li>
+                                                                        <li>
+                                                                                <a href="./vision.html"
+                                                                                        class="block px-4 py-2 my-4 hover:bg-gray-100 hover:text-black">Our
+                                                                                        Mission</a>
+                                                                        </li>
+                                                                        <li>
+                                                                                <a href="#"
+                                                                                        class="block px-4 py-2 hover:bg-gray-100 hover:text-black">Meet
+                                                                                        the Team</a>
+                                                                        </li>
+
+                                                                </ul>
+                                                        </div>
+
+                                                </li>
+                                                <li>
+                                                        <a href="./event.html"
+                                                                class="block py-2 pl-3 pr-4 pb-4 pt-3 text-black border-b border-gray-300 hover:bg-gray-100 md:border-0 md:hover:bg-white transition duration-500 md:hover:border-b md:hover:border-[#dc2626] md:hover:scale-110 md:p-0">Events</a>
+                                                </li>
+                                                <li>
+                                                        <a href="./founder.html"
+                                                                class="block py-2 pl-3 pr-4 pb-4 pt-3 text-black border-b border-gray-300 hover:bg-gray-100 md:border-0 md:hover:bg-white transition duration-500 md:hover:border-b md:hover:border-[#dc2626] md:hover:scale-110 md:p-0">Meet
+                                                                the CEO</a>
+                                                </li>
+
+
+                                        </ul>
+                                        <button
+                                                class="bg-blue hover:bg-[#dc2626] hover:duration-600 rounded p-2 px-6  mt-4 md:mt-0 md:ml-6 hover:duration-600">
+                                                <a href="./contact.html" class="">Contact US</a>
+                                        </button>
+                                </div>
+                        </div>
+                        </div>
+                </nav>
+
+        </header>
+
+        <main class="">
+
+                <section
+                        class="bg-[url('./healthcare/hth0546.webp')] py-10 px-4 md:px-16 bg-cover bg-no-repeat bg-center mb-[70px]">
+                        <div data-aos="fade-in" data-aos-duration="1000" class="pt-[120px] font-bold text-white">
+                                <h1 class="text-[20px] md:text-[30px] pb-4">Over 2,000 Lives Have been Impacted</h1>
+                                <p class="text-[12px] md:text-[16px]">A community driven foundation</p>
+                                <p class="mb-20 mt-8 text-[12px] md:text-[16px]">People are entitled to fulfilled dreams
+                                        and encouraging community
+                                        to foster such.</p>
+                                <button
+                                        class="bg-blue-800 p-4 shadow shadow-lg px-12 rounded-xl hover:bg-[#dc2626] hover:duration-500 text-[16px] mb-[60px]">
+                                        <a href="#explore">
+
+                                                Explore</a>
+                                        </button>
+                                        
+                                </div>
+
+                </section>
+
+                <section id="explore">
+                        <h4 data-aos="fade-up" data-aos-duration="700"
+                                class="font-bold text-[15px] md:text-[20px] mx-12 text-center after:block after:w-[4rem] after:h-[5px] after:my-[0.75rem] after:mx-auto after:bg-[#dc2626] content-none">
+                                Together we can build a strong and impactful community</h4>
+                        <p data-aos="fade-up" data-aos-duration="800"
+                                class="text-center text-[12px] md:text-[13px] pt-16 w-[auto] mx-4 md:mx-auto md:w-[600px] m-auto leading-6 md:leading-8 text-stone-900">
+                                Together, we build a more equitable and caring world, where every individual has access
+                                to
+                                essential healthcare and the support they need to thrive. We witness the power of
+                                empathy and the transformative effect of community support on the journey to healing
+                                and a journey to buiding a strong community.
+
+
+                        </p>
+                </section>
+
+                <section class="mt-[100px]">
+                        <h5 data-aos="fade-up" data-aos-duration="700"
+                                class="text-center font-bold text-[16px] sm:text-[22px] after:block after:w-[4rem] after:h-[5px] after:my-[0.75rem] after:mx-auto after:bg-[#dc2626] content-none">
+                                What we do</h4>
+                                <div data-aos="fade-out" data-aos-duration="700" class="min-h-screen flex items-center justify-center sm:mt-[100px] px-4 lg:mt-[60px]">
+
+                                        <div
+                                                class="grid grid-cols-2 sm:grid sm:grid-cols-4 sm:gap-32 gap-24 mx-4 mt-0 mb-[0px] sm:mt-[-260px] sm:mb-[-10px]">
+                                                <div class="flex flex-col justify-center items-center">
+                                                        <img src="./icons/community-line-svgrepo-com.svg" alt="..."
+                                                                class="w-[70px] h-[70px] rounded-full border border-[#dc2626] p-2">
+                                                        <p
+                                                                class="text-sm md:text-[14px] text-black text-center text-opacity-60 pt-2">
+                                                                Development</p>
+                                                </div>
+                                                <div class="flex flex-col justify-center items-center">
+                                                        <img src="./icons/donate-heart-svgrepo-com.svg" alt="..."
+                                                                class="w-[70px] h-[70px] rounded-full border border-[#dc2626] p-2 stroke-[#dc2626]">
+                                                        <p
+                                                                class="text-sm md:text-[14px] text-black text-opacity-60 pt-2 text-center">
+                                                                Donation</p>
+                                                </div>
+                                                <div class="flex flex-col justify-center items-center">
+                                                        <img src="./icons/education-svgrepo-com.svg" alt="..."
+                                                                class="w-[70px] h-[70px] rounded-full border border-[#dc2626] p-2 stroke-[#dc2626]">
+                                                        <p
+                                                                class="text-sm md:text-[14px] text-black text-opacity-60 pt-2">
+                                                                Education</p>
+                                                </div>
+                                                <div class="flex flex-col justify-center items-center">
+                                                        <img src="./icons/hands-holding-gift-svgrepo-com.svg" alt="..."
+                                                                class="w-[70px] h-[70px] rounded-full border border-[#dc2626] p-2">
+                                                        <p
+                                                                class="text-sm md:text-[14px] text-black text-opacity-60 pt-2">
+                                                                Giving</p>
+                                                </div>
+                                                <div class="flex flex-col justify-center items-center">
+                                                        <img src="./icons/health-svgrepo-com.svg" alt="..."
+                                                                class="w-[70px] h-[70px] rounded-full border border-[#dc2626] p-2">
+                                                        <p
+                                                                class="text-sm md:text-[14px] text-black text-opacity-60 pt-2">
+                                                                Health</p>
+                                                </div>
+                                                <div class="flex flex-col justify-center items-center">
+                                                        <img src="./icons/promotions-promotion-svgrepo-com.svg"
+                                                                alt="..."
+                                                                class="w-[70px] h-[70px] rounded-full border border-[#dc2626] p-2">
+                                                        <p
+                                                                class="text-sm md:text-[14px] text-black text-opacity-60 pt-2">
+                                                                Sponsorship</p>
+                                                </div>
+                                                <div class="flex flex-col justify-center items-center">
+                                                        <img src="./icons/protection-safe-secure-svgrepo-com.svg"
+                                                                alt="..."
+                                                                class="w-[70px] h-[70px] rounded-full border border-[#dc2626] p-2">
+                                                        <p
+                                                                class="text-sm md:text-[14px] text-black text-opacity-60 pt-2">
+                                                                Protection</p>
+                                                </div>
+                                                <div class="flex flex-col justify-center items-center">
+                                                        <img src="./icons/sport-svgrepo-com.svg" alt="..."
+                                                                class="w-[70px] h-[70px] rounded-full border border-[#dc2626] p-2">
+                                                        <p
+                                                                class="text-sm md:text-[14px] text-black text-opacity-60 pt-2">
+                                                                Sport</p>
+                                                </div>
+
+                                        </div>
+                                </div>
+                </section>
+
+                <section class="mt-20 sm:mt-[-100px] md:mb">
+                        <h6 data-aos="fade-up" data-aos-duration="700"
+                                class="font-bold text-[15px] md:text-[20px] mx-12 text-center after:block after:w-[4rem] after:h-[5px] after:my-[0.75rem] after:mx-auto after:bg-[#dc2626] content-none">
+                                The transformational power of donations</h6>
+                        <p data-aos="fade-up" data-aos-duration="800"
+                                class="text-center text-[12px] md:text-[13px] pt-16 pb-[60px] w-[auto] mx-4 md:mx-auto md:w-[600px] m-auto leading-6 md:leading-8 text-stone-900">
+                                We are thrilled to share the heartwarming impact of our recent Solar Lights Donation
+                                Drive, organized by Team Lagata UK Foundation. Thanks to the unwavering support and
+                                generosity of individuals like you, we have successfully brightened the lives of
+                                countless families in underserved communities. Along with many other life-changing events embarked on by the team!
+
+                        </p>
+                        <div id="default-carousel" class="relative m-auto" data-carousel="slide">
+                                <!-- Carousel wrapper -->
+                                <div class="relative  m-auto h-[400px] overflow-hidden md:h-[50rem]">
+                                        <!-- Item 1 -->
+                                        <div class="hidden ease-in-out" data-carousel-item>
+                                                <img src="/donation/don1.webp"
+                                                        class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 "
+                                                        alt="...">
+                                        </div>
+                                        <!-- Item 2 -->
+                                        <div class="hidden ease-in-out" data-carousel-item>
+                                                <img src="./donation/don2.webp"
+                                                        class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 "
+                                                        alt="...">
+                                        </div>
+                                        <!-- Item 3 -->
+                                        <div class="hidden ease-in-out" data-carousel-item>
+                                                <img src="./conference/con0149.webp"
+                                                        class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                                                        alt="...">
+                                        </div>
+                                        <!-- Item 4 -->
+                                        <div class="hidden ease-in-out" data-carousel-item>
+                                                <img src="./conference/con0153.webp"
+                                                        class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                                                        alt="...">
+                                        </div>
+                                        <!-- Item 5 -->
+                                        <div class="hidden ease-in-out" data-carousel-item>
+                                                <img src="./healthcare/hth3.webp"
+                                                        class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                                                        alt="...">
+                                        </div>
+                                        <!-- Item 6 -->
+                                        <div class="hidden ease-in-out" data-carousel-item>
+                                                <img src="/donation/don3.webp"
+                                                        class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                                                        alt="...">
+                                        </div>
+                                        <!-- Item 7 -->
+                                        <div class="hidden ease-in-out" data-carousel-item>
+                                                <img src="./healthcare/hth2.webp"
+                                                        class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                                                        alt="...">
+                                        </div>
+                                        <!-- Item 8 -->
+                                        <div class="hidden ease-in-out" data-carousel-item>
+                                                <img src="./conference/con0140.webp"
+                                                        class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                                                        alt="...">
+                                        </div>
+                                        <!-- Item 9 -->
+                                        <div class="hidden ease-in-out" data-carousel-item>
+                                                <img src="./conference/con0145.webp"
+                                                        class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                                                        alt="...">
+                                        </div>
+                                        <!-- Item 10 -->
+                                        <div class="hidden ease-in-out" data-carousel-item>
+                                                <img src="./conference/con0148.webp"
+                                                        class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                                                        alt="...">
+                                        </div>
+                                        <!-- Item 11 -->
+                                        <div class="hidden ease-in-out" data-carousel-item>
+                                                <img src="./conference/con0150.webp"
+                                                        class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                                                        alt="...">
+                                        </div>
+                                       
+                                </div>
+
+                                <!-- Slider controls -->
+                                <button type="button"
+                                        class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                                        data-carousel-prev>
+                                        <span
+                                                class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                                                <svg class="w-4 h-4 text-white dark:text-gray-800" aria-hidden="true"
+                                                        xmlns="http://www.w3.org/2000/svg" fill="none"
+                                                        viewBox="0 0 6 10">
+                                                        <path stroke="currentColor" stroke-linecap="round"
+                                                                stroke-linejoin="round" stroke-width="2"
+                                                                d="M5 1 1 5l4 4" />
+                                                </svg>
+                                                <span class="sr-only">Previous</span>
+                                        </span>
+                                </button>
+                                <button type="button"
+                                        class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                                        data-carousel-next>
+                                        <span
+                                                class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                                                <svg class="w-4 h-4 text-white dark:text-gray-800" aria-hidden="true"
+                                                        xmlns="http://www.w3.org/2000/svg" fill="none"
+                                                        viewBox="0 0 6 10">
+                                                        <path stroke="currentColor" stroke-linecap="round"
+                                                                stroke-linejoin="round" stroke-width="2"
+                                                                d="m1 9 4-4-4-4" />
+                                                </svg>
+                                                <span class="sr-only">Next</span>
+                                        </span>
+                                </button>
+                        </div>
+
+                        <a href="./event.html" class="flex justify-center pt-16">
+                                <button
+                                        class="bg-blue-800 p-4 px-4 hover:bg-[#dc2626] hover:duration-600 rounded-xl text-white text-[12px]">
+                                        View More &gt;&gt;
+                                </button>
+                        </a>
+                </section>
+
+                <section class="mt-[100px]">
+                        <div class="flex flex-col md:flex md:flex-row">
+
+                                <img src="./healthcare/hth3.webp" class="md:w-[50%]" alt="...">
+                                <div class="bg-[#dc2626] p-[10] md:w-[50%] p-10 md:p-20 pt-20 sm:pt-[140px] text-center">
+                                        <p class=" md:w-[300px] m-auto leading-8 text-white text-[11px] md:text-[1rem]">
+                                                Together, we impacted many lives with our Free Medical Service Event,
+                                                hosted by Team Lagata UK Foundation. This day of compassion,
+                                                professionals, volunteers, and beneficiaries came together with a shared
+                                                mission: creating positive change for those in need.
+
+                                        </p>
+                                        
+                                        <a href="./event.html" class="">
+                                                <button
+                                                        class="bg-[#dc2626] border shadow shadow-lg p-4 px-6 hover:bg-blue-800 hover:border-0
+                                                        hover:duration-600 text-white text-[12px] mt-10">
+                                                        View More &gt;&gt;
+                                                </button>
+                                        </a>
+                                </div>
+                        </div>
+                </section>
+        </main>
+
+        <footer class="bg-black p-4 py-20 px-4 md:px-16">
+                <div>
+                        <a href="#" class="flex items-center">
+                                <img src="./teamblack.webp" class="h-[50px] mr-3"
+                                        alt="Team Lagata Logo" />
+
+                        </a>
+                </div>
+
+                <div class="flex flex-col md:flex-row md:justify-between text-bluelight mt-[50px]">
+                        <div>
+                                <p class="text-xl text-white font-semibold mb-6">
+                                        About Us
+                                </p>
+                                <p class="my-4 text-[10px] md:text-[12px] hover:underline  hover:text-white">
+                                        <a href="./vision.html">Our Vision & Values</a>
+                                </p>
+                                <p class="my-4 text-[10px] md:text-[12px] hover:underline  hover:text-white">
+                                        <a href="./vision.html">Our Mission</a>
+                                </p>
+                                <p class="text-[10px] md:text-[12px] hover:underline  hover:text-white">
+                                        <a href="team.html">Our Structure</a>
+                                </p>
+                        </div>
+
+                        <div class="mt-12 md:mt-0">
+                                <p>
+                                        <a href="./contact.html" class="text-xl text-white font-semibold mb-6">Get In Touch</a>
+                                </p>
+                                <p class="flex my-4 text-[10px] md:text-[12px] hover:underline  hover:text-white">
+                                        <img src="./images/phone-svgrepo-com.svg" alt="Phone logo"
+                                                class=" rounded p-1">
+                                        <a href="tel:+2348038088632" class="pt-4 pl-2">+234-803-808-8632</a>
+                                </p>
+                                <p class="flex my-4 text-[10px] md:text-[12px] hover:underline hover:text-white">
+                                        <img src="./images/email-1-svgrepo-com.svg" alt="Email logo"
+                                                class=" rounded p-1"> <a
+                                                href="mailto:teamlagatauk@gmail.com" class="pt-4 pl-2">
+                                                teamlagatauk@gmail.com</a>
+                                </p>
+                                <p class="flex my-4 text-[10px] md:text-[12px] hover:underline hover:text-white">
+                                        <img src="./images/instagram-svgrepo-com.svg" alt="Instagram logo"
+                                                class="p-1">
+                                        <a href="https://instagram.com/teamlagataukfoundation?igshid=NTc4MTIwNjQ2YQ=="
+                                                class="pt-4 pl-2">teamlagataukfoundation</a>
+                                </p>
+                                <p class="flex my-4 text-[10px] md:text-[12px] hover:text-white">
+                                        <img src="./images/gps-svgrepo-com.svg" alt="GPS logo"
+                                                class="  rounded p-1">
+                                        <span class="pt-4 pl-2">Block 303 flat 1 low cost housing estate, Oke Afa Isolo,
+                                                Lagos Nigeria.</span>
+                                </p>
+                        </div>
+                </div>
+
+                <div class="mt-16 md:mt-16 text-center">
+                        <p class="text-[10px] text-gray-200">&copy; 2023 Team Lagata UK Foundation</p>
+                        <p class="text-[8px] text-gray-400">Privacy Policy | Terms of use</p>
+                </div>
+        </footer>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.7.0/flowbite.min.js"></script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+                AOS.init();
+        </script>
+        <script src="script.js"></script>
+</body>
+
+</html>
